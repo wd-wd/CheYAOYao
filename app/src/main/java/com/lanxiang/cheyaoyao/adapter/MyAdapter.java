@@ -1,5 +1,6 @@
 package com.lanxiang.cheyaoyao.adapter;
 
+import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -17,8 +18,10 @@ import java.util.List;
 
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyHolder> {
     private List<ActivityListData.DataBean.ItemsBean> mData;
-    public MyAdapter(List<ActivityListData.DataBean.ItemsBean> data) {
-        this.mData = data;
+    private Context mContext;
+
+    public MyAdapter(Context context) {
+        this.mContext = context;
     }
 
     @Override
@@ -35,6 +38,11 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyHolder> {
     @Override
     public int getItemCount() {
         return mData==null?0:mData.size();
+    }
+
+    public void setItems(List<ActivityListData.DataBean.ItemsBean> items) {
+        this.mData = items;
+        notifyDataSetChanged();
     }
 
     class MyHolder extends RecyclerView.ViewHolder{
