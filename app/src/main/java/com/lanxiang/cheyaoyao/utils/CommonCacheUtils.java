@@ -18,6 +18,7 @@ import java.io.IOException;
 public class CommonCacheUtils {
     /**
      * 从手机本地获取数据，包括内存和本地文件
+     *
      * @param url
      * @return
      */
@@ -31,20 +32,22 @@ public class CommonCacheUtils {
 
     /**
      * 内存中读取数据
+     *
      * @param url
      * @return
      */
-    public static String getFromMemory(String url){
+    public static String getFromMemory(String url) {
         String json = CheYaoYaoApp.getProtocolCache().get(url);
         return json;
     }
 
     /**
      * 从文件中获取数据
+     *
      * @param url
      * @return
      */
-    public static String getFromFile(String url){
+    public static String getFromFile(String url) {
         //读取本地文件
         //应用的缓存文件会存放在两个地方：
         //1.data/data/包名/cache  2.sdcard/android/data/包名/
@@ -65,7 +68,7 @@ public class CommonCacheUtils {
                 long currentTimeMillis = System.currentTimeMillis();
                 if ((currentTimeMillis - createTime) < CYYConstants.DURATION) {
                     String json = bufferedReader.readLine();
-                 CheYaoYaoApp.getProtocolCache().put(url, json);
+                    CheYaoYaoApp.getProtocolCache().put(url, json);
                     return json;
                 }
             } catch (IOException e) {
@@ -74,20 +77,22 @@ public class CommonCacheUtils {
         }
         return CheYaoYaoApp.getProtocolCache().get(url);
     }
+
     /**
      * 缓存网络数据到本地
+     *
      * @param json
      * @param url
      */
-    public static void cacheToFile(String json,String url){
+    public static void cacheToFile(String json, String url) {
         //需要在内存中存一份
-        CheYaoYaoApp.getProtocolCache().put(url,json);
+        CheYaoYaoApp.getProtocolCache().put(url, json);
         String filePath = FileUtils.getDir("json");
         //需要在本地存一份
-        File file = new File(filePath,url);
+        File file = new File(filePath, url);
         try {
             BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(file));
-            bufferedWriter.write(System.currentTimeMillis()+"");
+            bufferedWriter.write(System.currentTimeMillis() + "");
             bufferedWriter.newLine();
             bufferedWriter.write(json);
             bufferedWriter.flush();

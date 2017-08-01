@@ -9,6 +9,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.widget.Button;
 
 import com.google.gson.Gson;
 import com.lanxiang.cheyaoyao.adapter.MyAdapter;
@@ -47,6 +50,7 @@ public class MainActivity extends AppCompatActivity implements MvpView<ActivityL
     RecyclerView rvMain;
     private MyAdapter mMyAdapter;
     private List<ActivityListData.DataBean.ItemsBean> mItems;
+    private Button mButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,6 +63,20 @@ public class MainActivity extends AppCompatActivity implements MvpView<ActivityL
         loadStateLayout.setErrorView(R.layout.stateview_error);
         loadStateLayout.setLoadingView(R.layout.stateview_loading);
         loadStateLayout.setState(LoadStateLayout.STATE_LOADING);
+        View errorView = loadStateLayout.getErrorView();
+        mButton = (Button) errorView.findViewById(R.id.button);
+        mButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                loadStateLayout.setState(LoadStateLayout.STATE_LOADING);
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        loadData();
+                    }
+                }, 2000);
+            }
+        });
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
