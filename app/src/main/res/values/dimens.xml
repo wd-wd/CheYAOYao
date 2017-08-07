@@ -6,4 +6,15 @@
     <dimen name="dp10">5dp</dimen>
     <dimen name="dp100">50dp</dimen>
     <dimen name="dp8">4dp</dimen>
+    <dimen name="dp60">30dp</dimen>
+    <dimen name="dp40">20dp</dimen>
+    <dimen name="dp16">8dp</dimen>
+    <dimen name="dp160">80dp</dimen>
+    <dimen name="dp120">60dp</dimen>
+    <dimen name="dp4">2dp</dimen>
+    <dimen name="dp24">12dp</dimen>
+    <dimen name="dp20">10dp</dimen>
+    <dimen name="dp26">13dp</dimen>
+    <dimen name="dp48">24dp</dimen>
+    <dimen name="dp6">3dp</dimen>
 </resources>

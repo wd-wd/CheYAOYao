@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/iv_splash"
+        android:src="@mipmap/ic_splash"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"/>
+    <TextView
+        android:id="@+id/tv_splash"
+        android:gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:lineSpacingMultiplier="1.6"
+        android:textSize="@dimen/dp40"
+        android:layout_marginBottom="@dimen/dp60"
+        android:textColor="@android:color/holo_blue_light"
+        android:text="车遥遥，只为遇见你\n为情怀而生，分享生活，分享快乐"/>
+
+</FrameLayout>

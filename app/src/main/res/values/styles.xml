@@ -7,5 +7,22 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
     </style>
+    <style name="FullScreenThem" parent="AppTheme">
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
 
+<style name="tab_bottom">
+    <item name="android:layout_width">0dp</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_weight">1</item>
+    <item name="android:gravity">center</item>
+    <item name="android:layout_gravity">center</item>
+    <item name="android:button">@null</item>
+    <item name="android:textColor">@color/tab_bottem_text_selector</item>
+    <item name="android:drawablePadding">@dimen/dp16</item>
+    <item name="android:layout_marginTop">@dimen/dp8</item>
+    <item name="android:layout_marginBottom">@dimen/dp6</item>
+</style>
 </resources>

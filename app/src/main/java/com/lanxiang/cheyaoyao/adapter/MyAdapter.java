@@ -41,9 +41,13 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyHolder> {
     @Override
     public void onBindViewHolder(MyHolder holder, int position) {
         holder.mName.setText(mData.get(position).activityTitle);
-//        GlideUtil.getInstance().loadImage(mContext,holder.mPicture,mData.get(position).imagUrl,true);
-//        GlideUtil.getInstance().loadThumbnailImage(mContext,holder.mPicture,mData.get(position).imagUrl);
-        GlideUtil.getInstance().loadThumbnailImage(mContext,holder.mPicture,mData.get(position).imagUrl);
+        GlideUtil.getInstance().loadImage(mContext,holder.mPicture,mData.get(position).imagUrl,true);//图片的常规加载
+//        GlideUtil.getInstance().loadThumbnailImage(mContext,holder.mPicture,mData.get(position).imagUrl);//加载缩略图
+//        GlideUtil.getInstance().loadOverrideImage(mContext,holder.mPicture,mData.get(position).imagUrl,10,10);//加载图片给定大小
+//        GlideUtil.getInstance().loadBlurImage(mContext,holder.mPicture,mData.get(position).imagUrl);//加载图片模糊处理
+//        GlideUtil.getInstance().loadCircleImage(mContext,holder.mPicture,mData.get(position).imagUrl);//加载圆图
+//        GlideUtil.getInstance().loadBlurCircleImage(mContext,holder.mPicture,mData.get(position).imagUrl);//加载模糊的圆角图片
+//        GlideUtil.getInstance().loadCornerImage(mContext,holder.mPicture,mData.get(position).imagUrl);//加载圆角图片
     }
 
     @Override
