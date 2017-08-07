@@ -23,9 +23,9 @@ public class CommonCacheUtils {
      * @return
      */
     public static String getLocalJson(String url) {
-        String json = getFromMemory(url);
+        String json = getFromMemory(Md5Utils.encode(url));
         if (json == null) {
-            json = getFromFile(url);
+            json = getFromFile(Md5Utils.encode(url));
         }
         return json;
     }
@@ -86,10 +86,10 @@ public class CommonCacheUtils {
      */
     public static void cacheToFile(String json, String url) {
         //需要在内存中存一份
-        CheYaoYaoApp.getProtocolCache().put(url, json);
+        CheYaoYaoApp.getProtocolCache().put(Md5Utils.encode(url), json);
         String filePath = FileUtils.getDir("json");
         //需要在本地存一份
-        File file = new File(filePath, url);
+        File file = new File(filePath, Md5Utils.encode(url));
         try {
             BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(file));
             bufferedWriter.write(System.currentTimeMillis() + "");

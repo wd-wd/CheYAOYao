@@ -10,6 +10,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import com.lanxiang.cheyaoyao.CheYaoYaoApp;
 import com.lanxiang.cheyaoyao.R;
@@ -39,6 +40,7 @@ public class TestFragment extends Fragment implements MvpView<GoodsListData> {
     LoadStateLayout loadStateLayout;
     private GoodsAdapter mGoodsAdapter;
     private List<GoodsListData.ResultMapBean.ResultBean> mItems;
+    private Button mButton;
 
     @Nullable
     @Override
@@ -55,6 +57,14 @@ public class TestFragment extends Fragment implements MvpView<GoodsListData> {
         loadStateLayout.setLoadingView(R.layout.stateview_loading);
         loadStateLayout.setEmptyView(R.layout.stateview_empty);
         loadStateLayout.setErrorView(R.layout.stateview_error);
+        View errorView = loadStateLayout.getErrorView();
+        mButton = (Button) errorView.findViewById(R.id.button);
+        mButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                loadData();
+            }
+        });
         GridLayoutManager gridLayoutManager = new GridLayoutManager(CheYaoYaoApp.getsContext(),
                 2, LinearLayoutManager.VERTICAL, false);
         rvMovie.setLayoutManager(gridLayoutManager);
