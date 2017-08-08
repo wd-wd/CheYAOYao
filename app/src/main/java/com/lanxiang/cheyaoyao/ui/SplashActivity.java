@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -13,6 +14,7 @@ import com.lanxiang.cheyaoyao.MainActivity;
 import com.lanxiang.cheyaoyao.R;
 import com.lanxiang.cheyaoyao.base.activity.BaseActivity;
 import com.lanxiang.cheyaoyao.base.presenter.BasePresenter;
+import com.lanxiang.cheyaoyao.ui.activity.LoginActivity;
 import com.lanxiang.cheyaoyao.ui.activity.TabBottomActivity;
 
 import butterknife.BindView;

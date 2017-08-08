@@ -4,8 +4,12 @@ import android.app.Application;
 import android.content.Context;
 
 import com.google.gson.Gson;
+import com.mob.MobSDK;
 
 import java.util.HashMap;
+
+import cn.sharesdk.framework.ShareSDK;
+import cn.sharesdk.framework.utils.ShareSDKR;
 
 /**
  * Desc :
@@ -34,5 +38,6 @@ public class CheYaoYaoApp extends Application {
         sContext = getApplicationContext();
         protocolCache = new HashMap<>();
         gson = new Gson();
+        MobSDK.init(this);
     }
 }

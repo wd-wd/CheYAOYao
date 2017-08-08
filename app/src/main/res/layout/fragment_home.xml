@@ -3,7 +3,19 @@
              android:layout_width="match_parent"
              android:layout_height="match_parent"
            >
-
+<RelativeLayout
+    android:background="@android:color/white"
+    android:layout_width="match_parent"
+    android:gravity="center_vertical"
+    android:layout_height="@dimen/dp100">
+<ImageView
+    android:id="@+id/iv_share"
+    android:layout_width="@dimen/dp60"
+    android:layout_height="@dimen/dp60"
+    android:layout_alignParentRight="true"
+    android:paddingRight="@dimen/dp20"
+    android:src="@drawable/ic_share"/>
+</RelativeLayout>
     <TextView
         android:layout_gravity="center"
         android:textColor="#f00"

@@ -47,7 +47,7 @@ public class TabBottomActivity extends BaseActivity implements RadioGroup.OnChec
     RadioGroup rgTab;
     private List<Fragment> mFragments;
     private HomeFragment mHomeFragment;
-    private TestFragment mMovieFragment;
+    private MovieFragment mMovieFragment;
     private ChatFragment mChatFragment;
     private ShequFragment mShequFragment;
     private MineFragment mMineFragment;
@@ -83,7 +83,7 @@ public class TabBottomActivity extends BaseActivity implements RadioGroup.OnChec
     private void initFragment() {
         mFragments = new ArrayList<>();
         mHomeFragment = new HomeFragment();
-        mMovieFragment = new TestFragment();
+        mMovieFragment = new MovieFragment();
         mChatFragment = new ChatFragment();
         mShequFragment = new ShequFragment();
         mMineFragment = new MineFragment();

@@ -17,4 +17,5 @@
     <dimen name="dp26">13dp</dimen>
     <dimen name="dp48">24dp</dimen>
     <dimen name="dp6">3dp</dimen>
+    <dimen name="dp200">100dp</dimen>
 </resources>
