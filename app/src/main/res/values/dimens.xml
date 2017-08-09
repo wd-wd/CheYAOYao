@@ -18,4 +18,5 @@
     <dimen name="dp48">24dp</dimen>
     <dimen name="dp6">3dp</dimen>
     <dimen name="dp200">100dp</dimen>
+    <dimen name="dp400">200dp</dimen>
 </resources>

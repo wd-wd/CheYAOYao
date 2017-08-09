@@ -43,6 +43,9 @@ public abstract class BaseActivity<P extends BasePresenter> extends AppCompatAct
 
     @Override
     protected void onDestroy() {
+        if (mPresenter != null) {
+            mPresenter.onPresenterDestroy();
+        }
         super.onDestroy();
         if (mBind != null) {
             mBind.unbind();//解除绑定

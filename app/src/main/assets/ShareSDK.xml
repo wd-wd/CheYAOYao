@@ -54,15 +54,15 @@
 		且该URL只能是该第三方（调用方）绑定域下的URL链接，绑定域在“我的应用 － 应用信息 － 基本应用信息编辑 － 安全域名”里设置。-->
 	<!--在ShareByAppClient为false，ShareByWebApi = "false"时，分享会调用Web页面分享{调用web分享，需集成res资源文件，以及libs下的so库}，
 		在ShareByAppClient为false，ShareByWebApi = "true"时，会走API方式分享-->
-    <SinaWeibo
-        Id="1"
-        SortId="1"
-        AppKey="1231501351"
-        AppSecret="e512443dbdd35244786aba119b4e67d1"
-        RedirectUrl="https://api.weibo.com/oauth2/default.html"
-        ShareByAppClient="true"
+	<SinaWeibo
+		Id="1"
+		SortId="1"
+		AppKey="568898243"
+		AppSecret="38a4f8204cc784f81f9f0daaf31e02e3"
+		RedirectUrl="http://www.sharesdk.cn"
+		ShareByAppClient="true"
 		ShareByWebApi = "false"
-        Enable="true" />
+		Enable="true" />
 
     <TencentWeibo
         Id="2" 

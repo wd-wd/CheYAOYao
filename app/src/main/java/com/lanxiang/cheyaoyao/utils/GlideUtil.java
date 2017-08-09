@@ -226,7 +226,7 @@ public class GlideUtil {
                 .asGif()
                 .crossFade()
                 .priority(Priority.NORMAL) //下载的优先级
-                .diskCacheStrategy(DiskCacheStrategy.ALL) //缓存策略
+                .diskCacheStrategy(DiskCacheStrategy.SOURCE) //缓存策略
                 .error(R.mipmap.error)
                 .into(imageView);
     }

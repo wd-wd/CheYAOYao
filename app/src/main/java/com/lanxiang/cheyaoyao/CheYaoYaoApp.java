@@ -38,6 +38,6 @@ public class CheYaoYaoApp extends Application {
         sContext = getApplicationContext();
         protocolCache = new HashMap<>();
         gson = new Gson();
-        MobSDK.init(this);
+        MobSDK.init(sContext, "20058664c8e5e", "5fba7f92225f69217f7af93e537081cc");
     }
 }

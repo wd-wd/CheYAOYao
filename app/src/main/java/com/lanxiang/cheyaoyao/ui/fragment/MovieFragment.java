@@ -32,6 +32,8 @@ import com.lanxiang.cheyaoyao.magicIndicator.buildins.commonnavigator.titles.Sim
 import com.lanxiang.cheyaoyao.ui.model.impl.TabTitleModelImpl;
 import com.lanxiang.cheyaoyao.ui.presenter.MovieTabTitlePresenter;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import butterknife.BindView;
@@ -100,7 +102,7 @@ public class MovieFragment extends Fragment implements MvpView<MovieTabListData>
     private void initData() {
 //        getData();
         loadData();
-        LogUtils.e(vpMovie);
+//        LogUtils.e(vpMovie);
     }
 
     private void initMagicIndicator() {

@@ -18,6 +18,11 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
 }
 
 dependencies {
@@ -53,6 +58,9 @@ dependencies {
     //rx
     compile 'io.reactivex:rxandroid:1.2.1'
     compile 'io.reactivex:rxjava:1.1.6'
+    //节操player
+    compile 'fm.jiecao:jiecaovideoplayer:4.6.3'
+
     compile files('libs/MobCommons-2017.0801.1522.jar')
     compile files('libs/MobTools-2017.0801.1522.jar')
     compile files('libs/ShareSDK-Core-3.0.1.jar')
