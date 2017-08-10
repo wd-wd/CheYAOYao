@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/dp20"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_gravity="center"
+        android:id="@+id/iv_home_fenlei"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_category_0"/>
+
+    <TextView
+        android:layout_gravity="center"
+        android:id="@+id/tv_home_fenlei"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp20"
+        android:text="美食"
+        android:textColor="@android:color/darker_gray"/>
+</LinearLayout>

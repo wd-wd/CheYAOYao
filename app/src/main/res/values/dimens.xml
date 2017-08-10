@@ -19,4 +19,8 @@
     <dimen name="dp6">3dp</dimen>
     <dimen name="dp200">100dp</dimen>
     <dimen name="dp400">200dp</dimen>
+    <dimen name="dp500">250dp</dimen>
+    <dimen name="dp32">16dp</dimen>
+    <dimen name="dp150">75dp</dimen>
+    <dimen name="dp28">14dp</dimen>
 </resources>

@@ -6,7 +6,7 @@ android {
     buildToolsVersion "25.0.0"
     defaultConfig {
         applicationId "com.lanxiang.cheyaoyao"
-        minSdkVersion 15
+        minSdkVersion 23
         targetSdkVersion 25
         versionCode 1
         versionName "1.0"
@@ -60,6 +60,11 @@ dependencies {
     compile 'io.reactivex:rxjava:1.1.6'
     //节操player
     compile 'fm.jiecao:jiecaovideoplayer:4.6.3'
+
+    // slider图片展示
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.daimajia.slider:library:1.1.5@aar'
+    compile 'com.squareup.picasso:picasso:2.5.2'
 
     compile files('libs/MobCommons-2017.0801.1522.jar')
     compile files('libs/MobTools-2017.0801.1522.jar')

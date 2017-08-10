@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <com.daimajia.slider.library.SliderLayout
+        android:id="@+id/slider"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp400"
+        >
+
+        <com.daimajia.slider.library.Indicators.PagerIndicator
+            android:id="@+id/custom_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp20"
+            android:layout_marginBottom="@dimen/dp20"
+            custom:selected_color="@color/userdatacolor"
+            custom:selected_height="@dimen/dp20"
+            custom:selected_padding_left="@dimen/dp4"
+            custom:selected_padding_right="@dimen/dp4"
+            custom:selected_width="@dimen/dp20"
+            custom:shape="oval"
+            custom:unselected_color="@android:color/white"
+            custom:unselected_height="@dimen/dp20"
+            custom:unselected_padding_left="@dimen/dp4"
+            custom:unselected_padding_right="@dimen/dp4"
+            custom:unselected_width="@dimen/dp20"
+            />
+
+    </com.daimajia.slider.library.SliderLayout>
+</RelativeLayout>
