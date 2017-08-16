@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_item_chat"
+        android:layout_width="@dimen/dp200"
+        android:layout_height="@dimen/dp200"
+        android:layout_gravity="center"
+        android:src="@drawable/bg_circle_selector"/>
+
+    <TextView
+        android:id="@+id/tv_item_chat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="31"
+        android:textColor="@color/bt_textcolor_selector"
+        android:textSize="@dimen/dp48"/>
+</FrameLayout>

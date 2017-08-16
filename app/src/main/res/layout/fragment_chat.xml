@@ -3,13 +3,16 @@
              android:layout_width="match_parent"
              android:layout_height="match_parent"
            >
+<FrameLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/sv_bg">
 
-    <TextView
-        android:layout_gravity="center"
-        android:textColor="#f00"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="聊天"
-        android:textSize="20sp"/>
-
+<android.support.v7.widget.RecyclerView
+    android:layout_marginTop="@dimen/dp100"
+    android:id="@+id/rv_chat"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    />
+</FrameLayout>
 </FrameLayout>
