@@ -85,7 +85,7 @@
                     android:layout_height="@dimen/dp48"
                     android:layout_alignParentRight="true"
                     android:layout_marginRight="@dimen/dp10"
-                    android:background="@drawable/bg_bt"
+                    android:background="@drawable/bg_bt_nomal"
                     android:gravity="center"
                     android:padding="@dimen/dp4"
                     android:text="@string/duihaun"

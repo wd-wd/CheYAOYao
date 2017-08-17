@@ -8,8 +8,8 @@ import com.mob.MobSDK;
 
 import java.util.HashMap;
 
-import cn.sharesdk.framework.ShareSDK;
-import cn.sharesdk.framework.utils.ShareSDKR;
+import cn.bmob.v3.Bmob;
+
 
 /**
  * Desc :
@@ -39,5 +39,11 @@ public class CheYaoYaoApp extends Application {
         protocolCache = new HashMap<>();
         gson = new Gson();
         MobSDK.init(sContext, "20058664c8e5e", "5fba7f92225f69217f7af93e537081cc");
+        iniBmob();
     }
+
+    private void iniBmob() {
+        Bmob.initialize(this,"eebb0138aa990046b24603b53c2b1520");
+    }
+
 }

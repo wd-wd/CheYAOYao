@@ -22,6 +22,6 @@
         android:layout_gravity="bottom|center_horizontal"
         android:layout_marginBottom="170dp"
         android:layout_marginLeft="@dimen/dp8"
-        android:background="@drawable/bg_bt"/>
+        android:background="@drawable/bg_bt_nomal"/>
 
 </FrameLayout>

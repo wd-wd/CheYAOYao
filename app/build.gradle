@@ -4,6 +4,9 @@ apply plugin: 'android-apt'
 android {
     compileSdkVersion 25
     buildToolsVersion "25.0.0"
+
+    // **兼容Android6.0系统所需，如果这句话报错，可在dependencies标签下使用compile 'cn.bmob.android:http-legacy:1.0'**
+    useLibrary 'org.apache.http.legacy'
     defaultConfig {
         applicationId "com.lanxiang.cheyaoyao"
         minSdkVersion 23
@@ -60,12 +63,10 @@ dependencies {
     compile 'io.reactivex:rxjava:1.1.6'
     //节操player
     compile 'fm.jiecao:jiecaovideoplayer:4.6.3'
-
     // slider图片展示
     compile 'com.nineoldandroids:library:2.4.0'
     compile 'com.daimajia.slider:library:1.1.5@aar'
     compile 'com.squareup.picasso:picasso:2.5.2'
-
     compile files('libs/MobCommons-2017.0801.1522.jar')
     compile files('libs/MobTools-2017.0801.1522.jar')
     compile files('libs/ShareSDK-Core-3.0.1.jar')
@@ -78,4 +79,8 @@ dependencies {
     compile files('libs/ShareSDK-Wechat-Core-3.0.1.jar')
     compile files('libs/ShareSDK-Wechat-Favorite-3.0.1.jar')
     compile files('libs/ShareSDK-Wechat-Moments-3.0.1.jar')
+
+    compile 'cn.bmob.android:bmob-sdk:3.5.0'
+    //如果你想应用能够兼容Android6.0，请添加此依赖(org.apache.http.legacy.jar)
+    compile 'cn.bmob.android:http-legacy:1.0'
 }

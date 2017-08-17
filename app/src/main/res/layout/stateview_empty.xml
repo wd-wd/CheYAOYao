@@ -19,5 +19,5 @@
     android:padding="10dp"
     android:textColor="@android:color/white"
     android:textSize="@dimen/dp34"
-    android:background="@drawable/bg_bt"/>
+    android:background="@drawable/bg_bt_nomal"/>
 </FrameLayout>
