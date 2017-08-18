@@ -35,7 +35,7 @@
                 android:inputType="number"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-               />
+                />
         </android.support.design.widget.TextInputLayout>
 
         <android.support.design.widget.TextInputLayout
@@ -68,7 +68,17 @@
         android:layout_marginRight="@dimen/dp20"
         android:layout_marginTop="@dimen/dp20"
         android:background="@drawable/bg_bt_selector"
-        android:text="注册"
+        android:text="登录"
         android:textColor="@color/bt_textcolor_selector"
         android:textSize="@dimen/dp40"/>
+    <TextView
+        android:id="@+id/tv_go_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/dp40"
+        android:text="去注册"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="@dimen/dp40"
+        android:layout_marginBottom="150dp"
+        android:textColor="@color/userdatacolor"/>
 </FrameLayout>

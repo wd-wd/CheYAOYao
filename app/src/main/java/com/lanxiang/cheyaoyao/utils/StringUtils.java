@@ -14,6 +14,8 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.text.DecimalFormat;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class StringUtils {
 	public final static String UTF_8 = "utf-8";
@@ -158,5 +160,13 @@ public class StringUtils {
 			message = bodyString;
 		}
 		return message;
+	}
+	public static boolean isMobile(String value) {
+		if (value != null && value.length() == 11) {
+			Pattern pattern = Pattern.compile("^1[3|4|5|6|7|8][0-9]\\d{8}$");
+			Matcher matcher = pattern.matcher(value);
+			return matcher.matches();
+		}
+		return false;
 	}
 }

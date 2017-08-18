@@ -15,6 +15,7 @@ import com.lanxiang.cheyaoyao.R;
 import com.lanxiang.cheyaoyao.base.activity.BaseActivity;
 import com.lanxiang.cheyaoyao.base.presenter.BasePresenter;
 import com.lanxiang.cheyaoyao.ui.activity.LoginActivity;
+import com.lanxiang.cheyaoyao.ui.activity.LoginBmobActivity;
 import com.lanxiang.cheyaoyao.ui.activity.TabBottomActivity;
 
 import butterknife.BindView;
@@ -67,7 +68,7 @@ public class SplashActivity extends BaseActivity implements Animator.AnimatorLis
 
     @Override
     public void onAnimationEnd(Animator animation) {
-        Intent intent = new Intent(SplashActivity.this, TabBottomActivity.class);
+        Intent intent = new Intent(SplashActivity.this, LoginBmobActivity.class);
         startActivity(intent);
         finish();
     }

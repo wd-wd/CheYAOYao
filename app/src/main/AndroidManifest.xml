@@ -44,11 +44,11 @@
             android:name=".ui.SplashActivity"
             android:screenOrientation="portrait"
             android:theme="@style/FullScreenThem">
-            <!--<intent-filter>
+            <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>-->
+            </intent-filter>
         </activity>
         <activity android:name=".ui.activity.TabBottomActivity"
                   android:screenOrientation="portrait"/>
@@ -57,12 +57,15 @@
 
         <activity android:name=".ui.activity.RegisterActivity"
             android:screenOrientation="portrait">
-            <intent-filter>
+          <!--  <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 
                 <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
+            </intent-filter>-->
         </activity>
+        <activity android:name=".ui.activity.LoginBmobActivity"
+            android:screenOrientation="portrait"
+            android:launchMode="singleTask"/>
 
         <!-- ShareSDK的activity -->
         <activity

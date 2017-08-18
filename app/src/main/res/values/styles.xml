@@ -21,4 +21,13 @@
     <item name="android:layout_marginTop">@dimen/dp8</item>
     <item name="android:layout_marginBottom">@dimen/dp6</item>
 </style>
+
+    <!--自定加载界面的dialog-->
+    <style name="cyy_CustomShowLoadDialog">
+        <item name="android:windowFrame">@null</item><!--边框-->
+        <item name="android:windowIsFloating">true</item><!--是否浮现在activity之上-->
+        <item name="android:windowNoTitle">true</item><!--无标题-->
+        <item name="android:windowBackground">@drawable/bg_load_dialog_custom</item><!--背景透明-->
+
+    </style>
 </resources>
