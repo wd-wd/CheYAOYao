@@ -83,4 +83,7 @@ dependencies {
     compile 'cn.bmob.android:bmob-sdk:3.5.0'
     //如果你想应用能够兼容Android6.0，请添加此依赖(org.apache.http.legacy.jar)
     compile 'cn.bmob.android:http-legacy:1.0'
+
+    //greendao
+    compile 'org.greenrobot:greendao:3.2.0'
 }

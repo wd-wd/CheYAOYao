@@ -17,6 +17,7 @@ import com.lanxiang.cheyaoyao.ui.fragment.MineFragment;
 import com.lanxiang.cheyaoyao.ui.fragment.MovieFragment;
 import com.lanxiang.cheyaoyao.ui.fragment.ShequFragment;
 import com.lanxiang.cheyaoyao.ui.fragment.TestFragment;
+import com.lanxiang.cheyaoyao.ui.fragment.VideoFragment;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -47,7 +48,7 @@ public class TabBottomActivity extends BaseActivity implements RadioGroup.OnChec
     RadioGroup rgTab;
     private List<Fragment> mFragments;
     private HomeFragment mHomeFragment;
-    private MovieFragment mMovieFragment;
+    private VideoFragment mVideoFragment;
     private ChatFragment mChatFragment;
     private ShequFragment mShequFragment;
     private MineFragment mMineFragment;
@@ -83,12 +84,12 @@ public class TabBottomActivity extends BaseActivity implements RadioGroup.OnChec
     private void initFragment() {
         mFragments = new ArrayList<>();
         mHomeFragment = new HomeFragment();
-        mMovieFragment = new MovieFragment();
+        mVideoFragment = new VideoFragment();
         mChatFragment = new ChatFragment();
         mShequFragment = new ShequFragment();
         mMineFragment = new MineFragment();
         mFragments.add(mHomeFragment);
-        mFragments.add(mMovieFragment);
+        mFragments.add(mVideoFragment);
         mFragments.add(mChatFragment);
         mFragments.add(mShequFragment);
         mFragments.add(mMineFragment);

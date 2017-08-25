@@ -24,4 +24,5 @@
     <dimen name="dp150">75dp</dimen>
     <dimen name="dp28">14dp</dimen>
     <dimen name="dp700">350dp</dimen>
+    <dimen name="dp70">35dp</dimen>
 </resources>

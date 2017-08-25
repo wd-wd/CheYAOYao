@@ -10,5 +10,6 @@ public class CYYConstants {
     //http://192.168.1.242:8889/jeeba/app/queryMyComActivityByUserId.do?myFlag=0&userid=132&currentPageIndex=1
     public static final String SERVER_URL = "http://192.168.1.242:8889/jeeba/app/";
     public static final String BAISI_URL = "http://s.budejie.com/";
+    public static final String VIDEO_URL = "http://route.showapi.com/";
 
 }
