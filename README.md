@@ -5,7 +5,8 @@
 #### 2.activity的基类抽取BaseActivity
 #### 3.fragment的基类抽取，分懒加载BaseLazyFragment和普通Basefragment
 #### 4.常用工具类封装
-#### 5.main界面的代码示例
+#### 5.使用节操视频播放
+#### 6.main界面的代码示例
 
 ## 网络框架的封装
 #### 1.retrofit结合rxjava封装
